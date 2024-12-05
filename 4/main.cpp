@@ -53,7 +53,6 @@ bool checkCharMatch(int x, int y, char c, std::vector<std::string>& lines){
 
 bool checkWordMatch(int x, int y, std::vector<std::pair<int,int>>& orientation, std::string& pattern, std::vector<std::string>& lines){
 	for(unsigned long i{0} ; i< pattern.size(); ++i){
-		//std::cout << pattern[i] << " at (" << x+orientation[i].first << "," << y+orientation[i].second << ") = " << lines[static_cast<unsigned long>(x+orientation[i].first)][static_cast<unsigned long>(y+orientation[i].second)];
 		if(!checkCharMatch(x+orientation[i].first,y+orientation[i].second, pattern[i], lines)){
 			return false;
 		}
