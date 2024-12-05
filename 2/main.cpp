@@ -35,7 +35,7 @@ bool isSafe(std::vector<int> report) {
 			last = report[i];
 			continue;
 		}
-		int diff = abs(last-report[i]);
+		const int diff = abs(last-report[i]);
 		if (i == 1) {
 			if ((diff > 3) || (diff == 0)){
 				return false;
