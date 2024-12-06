@@ -8,4 +8,4 @@ day=$1
 $day/**.cpp \
 -o $day/main \
 
-$day/main
+time $day/main
