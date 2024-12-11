@@ -8,4 +8,5 @@ day=$1
 $day/**.cpp \
 -o $day/main \
 
-time $day/main
+xctrace record --output . --template "Time Profiler" --time-limit 20s --launch \
+-- $day/main
