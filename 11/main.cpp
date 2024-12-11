@@ -63,7 +63,7 @@ long long breakStone(const long long stone, const int iterations, std::unordered
 	} else {
 		currAns = {stone * 2024};
 	}
-	long long ans{blink(currAns, iterations -1, stoneBreakIterationMap)};
+	const long long ans{blink(currAns, iterations -1, stoneBreakIterationMap)};
 	stoneBreakIterationMap[stone][iterations] = ans;
 	return ans;
 }
