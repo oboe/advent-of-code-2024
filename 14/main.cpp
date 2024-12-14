@@ -145,7 +145,7 @@ long long countConnected(std::vector<std::vector<int>>& board){
 bool isNoisy(std::vector<std::vector<int>>& board, long long xBounds, long long yBounds){
 	const long long connected{countConnected(board)};
 	const long long total{xBounds*yBounds};
-	return ((total/connected) > 60ll);
+	return ((total/connected) > 30ll);
 }
 
 void sol1(){
