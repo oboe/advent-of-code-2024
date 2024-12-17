@@ -232,7 +232,6 @@ void sol2(){
 	Register registers{};
 	parseFile("17/input.txt", registers, actions);
 	std::vector<int> defaultActions = actions;
-	//check(9, defaultActions);
 	std::unordered_set<long long> aSet{};
 	aSet.insert(0);
 	std::reverse(actions.begin(), actions.end());
