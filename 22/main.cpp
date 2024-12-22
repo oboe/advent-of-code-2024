@@ -142,8 +142,7 @@ void sol2() {
       for (int64_t c{-9}; c <= 9; ++c) {
         for (int64_t d{-9}; d <= 9; ++d) {
           const std::string mpStr{getMpStr(a, b, c, d)};
-          if (countMp.count(mpStr) == 0) continue;
-          if (countMp[mpStr] <= 300) continue;
+          if (countMp.count(mpStr) == 0 || countMp[mpStr] <= 300) continue;
           int64_t sum{0};
           std::vector<int64_t> command{a, b, c, d};
           for (std::vector<int64_t> p : allPrices) {
