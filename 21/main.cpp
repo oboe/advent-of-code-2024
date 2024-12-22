@@ -34,16 +34,16 @@ struct State{
 };
 
 const std::vector<std::string> keypad{
-		{"X^A"},
-		{"<v>"}
-	};
+	{"X^A"},
+	{"<v>"}
+};
 
 const std::vector<std::string> numpad{
-		{"789"},
-		{"456"},
-		{"123"},
-		{"X0A"}
-	}; 
+	{"789"},
+	{"456"},
+	{"123"},
+	{"X0A"}
+}; 
 
 std::pair<int,int> getPos(const std::vector<std::string>& pad, const char c){
 	for (int xx{0}; xx < static_cast<int>(pad.size()); ++xx) {
